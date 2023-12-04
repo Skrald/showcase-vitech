@@ -37,7 +37,7 @@ RETURN
 go 
 -- решение с ручным вводом данных
 begin
-	declare @dtStart as date = '20230901', @dtEnd as date = '20231231' ;
+	declare @dtStart as date = '20230901', @dtEnd as date = '20231130' ;
 	with sku_list(id_sku) as (select 1 union all select 2) 
 	, granularity as (select * from sku_list cross join dbo.GetNums(0, datediff(day, @dtStart, @dtEnd)))
 	, granularity_dt as (select id_sku, dateadd(day, n, @dtStart) as dt from granularity)

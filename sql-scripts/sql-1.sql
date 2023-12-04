@@ -29,7 +29,7 @@ from #measure_history
 with measure_list as (
 	select distinct measure_name from #measure_history
 )
-select month_code, uantity, sale, margin, client from (
+select month_code, quantity, sale, margin, client from (
 	select month_code, measure_name, measure_value 
 	from #measure_history
 ) src
@@ -104,8 +104,6 @@ with basic_select as (
 		, (sale - lag(sale, 1) over(order by month_code)) / lag(sale, 1) over(order by month_code) as [sale_growth_rate] 
 			-- помесячный прирост суммы реализованного товара 
 		, (price_avg - lag(price_avg, 1) over(order by month_code)) / lag(price_avg, 1) over(order by month_code) as [price_growth_rate] 
-			-- помесячный прирост суммы реализованного товара 
+			-- помесячный прирост стоимости реализованного товара 
 	from basic_grouping 
 ;
--- делаем вывод о неизменной маржинальности (чтобы отвязаться от масштаба, можно сравнивать как удельные показатели, так и соотношение тоталов)
--- делаем вывод о постоянном влиянии внешнего ценового фактора (про инфляцию можно говорить при доп.вводных, например, динамике закупок / прямой себестоимости) и о бремени для покупателя 

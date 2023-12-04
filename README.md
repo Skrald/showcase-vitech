@@ -6,7 +6,7 @@
  
 Данные были подготовлены в следующем виде:  
 
-<img src=https://github.com/Skrald/showcase-vitech/blob/bbe86a9fc732ad05417dd3abcabff34fb1575b9c/images/sql-1-1.png width=720 height=360>
+<img src=https://github.com/Skrald/showcase-vitech/blob/bbe86a9fc732ad05417dd3abcabff34fb1575b9c/images/sql-1-1.png width=196 height=225>
 
 ```sql
 CREATE TABLE #measure_history (
@@ -38,7 +38,7 @@ INSERT INTO #measure_history (month_code, measure_name, measure_value) VALUES
 
 Итоговая форма должна была быть:  
 
-<img src=https://github.com/Skrald/showcase-vitech/blob/bbe86a9fc732ad05417dd3abcabff34fb1575b9c/images/sql-1-2.png width=720 height=360>
+<img src=https://github.com/Skrald/showcase-vitech/blob/bbe86a9fc732ad05417dd3abcabff34fb1575b9c/images/sql-1-2.png width=289 height=83>
 
 Описание:  
 

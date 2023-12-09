@@ -1,0 +1,35 @@
+{
+  "name": "dim_manager",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    src = Table.FromRows(",
+      "        Json.Document(",
+      "            Binary.Decompress(",
+      "                Binary.FromText(",
+      "                    \"bZBJDsIwDEXvknUVxSmdzlL1LggkVmxghRiEuAFUVK0YyhWcG2E7oQUJyd7kv/h/uywVqEjhCR/YuSk+sceaHgxoY7U1NlZVVCrLzAZrPP8QQAQkQsRMbN0cWyIatxgpkDlWqIn36vFGff+alI9eCTNH0l5Bh0SbbNRT1nfY4IX6Si0zCk01+GSShv63o4sNG4EQORMH1rCTNH+Ygpk99nQXnhTS0EaydyEMGB+3cTPBBDGaipDcI3LhtWw8OIW8kHnEfg4jcd3SrQaMTwOpqqo3\",",
+      "                    BinaryEncoding.Base64",
+      "                ),",
+      "                Compression.Deflate",
+      "            )",
+      "        ),",
+      "        let",
+      "            _t = ((type nullable text) meta [Serialized.Text = true])",
+      "        in",
+      "            type table [manager_id = _t, name = _t, start_work = _t]",
+      "    ),",
+      "    typed = Table.TransformColumnTypes(",
+      "        src,",
+      "        {",
+      "            {\"manager_id\", Int64.Type}, ",
+      "            {\"name\", type text}, ",
+      "            {\"start_work\", type date}",
+      "        }",
+      "    )",
+      "in",
+      "    typed"
+    ]
+  }
+}

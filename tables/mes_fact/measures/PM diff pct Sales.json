@@ -1,0 +1,6 @@
+{
+  "name": "PM diff pct Sales",
+  "expression": "CALCULATE([Diff pct Sales], DATEADD(dim_calendar[dt], -1, MONTH))",
+  "formatString": "0.0%;-0.0%;0.0%",
+  "lineageTag": "f88801cf-8c6b-4cb6-aaf5-fe873c19dd68"
+}

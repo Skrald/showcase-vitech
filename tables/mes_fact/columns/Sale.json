@@ -1,0 +1,18 @@
+{
+  "name": "Sale",
+  "dataType": "double",
+  "sourceColumn": "Sale",
+  "formatString": "#,0",
+  "lineageTag": "2c0b4f7f-9db3-4d3a-84e2-5d899647331f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

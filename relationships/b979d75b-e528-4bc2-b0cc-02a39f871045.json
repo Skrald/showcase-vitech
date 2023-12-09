@@ -1,0 +1,7 @@
+{
+  "name": "b979d75b-e528-4bc2-b0cc-02a39f871045",
+  "fromTable": "mes_fact",
+  "fromColumn": "manager_id",
+  "toTable": "dim_manager",
+  "toColumn": "manager_id"
+}

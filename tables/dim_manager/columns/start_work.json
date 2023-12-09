@@ -1,0 +1,22 @@
+{
+  "name": "start_work",
+  "dataType": "dateTime",
+  "sourceColumn": "start_work",
+  "formatString": "dd.mm.yy",
+  "lineageTag": "a8d764e8-f16a-4cca-8dd1-0cc0f5d97ad5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDateTimeCustom\":true}"
+    }
+  ]
+}

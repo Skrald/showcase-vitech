@@ -1,0 +1,14 @@
+{
+  "name": "quarter_code",
+  "dataType": "int64",
+  "sourceColumn": "quarter_code",
+  "formatString": "0",
+  "lineageTag": "141ff5e5-be3a-4e65-9b64-1978004b5858",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

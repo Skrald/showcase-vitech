@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "name",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "dim_manager[name]",
+  "lineageTag": "5582db39-e6c9-4d30-ab28-1daaadefadc1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

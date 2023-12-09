@@ -1,0 +1,6 @@
+{
+  "name": "Total Bonus",
+  "expression": "SUM(mes_fact[Bonus])",
+  "formatString": "#,0",
+  "lineageTag": "549ec90f-97b8-413e-83c1-7462f27c7ac5"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PM diff pct Bonus",
+  "expression": "CALCULATE([Diff pct Bonus], DATEADD(dim_calendar[dt], -1, MONTH))",
+  "formatString": "0.0%;-0.0%;0.0%",
+  "lineageTag": "06347932-e4fb-42c0-9add-8190697ce2ea"
+}

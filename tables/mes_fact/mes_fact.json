@@ -1,0 +1,14 @@
+{
+  "name": "mes_fact",
+  "lineageTag": "23c6e6a5-3648-4e3c-a0b8-d5d09ed78465",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

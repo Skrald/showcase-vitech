@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "month_code",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "dim_calendar[month_code]",
+  "formatString": "0",
+  "lineageTag": "03ca9a7e-ad6c-4ec3-a761-1b653d874e60",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

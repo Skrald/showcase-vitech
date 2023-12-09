@@ -1,0 +1,14 @@
+{
+  "name": "manager_id",
+  "dataType": "int64",
+  "sourceColumn": "manager_id",
+  "formatString": "0",
+  "lineageTag": "42fc5bd0-f268-468c-abc4-a2b52800e113",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

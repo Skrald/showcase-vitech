@@ -1,0 +1,23 @@
+{
+  "name": "report_dt",
+  "dataType": "dateTime",
+  "isHidden": true,
+  "sourceColumn": "report_dt",
+  "formatString": "dd.mm.yy",
+  "lineageTag": "9a17457e-9477-4b71-b33e-dd259bf446e8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDateTimeCustom\":true}"
+    }
+  ]
+}

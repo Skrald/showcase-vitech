@@ -1,0 +1,13 @@
+{
+  "name": "Diff pct Bonus",
+  "expression": [
+    "",
+    "VAR _diff =",
+    "    DIVIDE ( [Total Bonus] - [PM Bonus], [PM Bonus] )",
+    "RETURN",
+    "    IF ( [Total Bonus] && [PM Bonus], _diff )",
+    ""
+  ],
+  "formatString": "0.0%;-0.0%;0.0%",
+  "lineageTag": "9918752d-f26c-49c0-b84a-29fbe8e75a39"
+}

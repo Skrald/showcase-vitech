@@ -1,0 +1,14 @@
+{
+  "name": "day",
+  "dataType": "int64",
+  "sourceColumn": "day",
+  "formatString": "0",
+  "lineageTag": "cde80a8d-8a0c-49bb-9004-f7ada132c4db",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "000b7efa-cb54-4ea4-9e89-da538cad0824",
+  "fromTable": "mes_fact",
+  "fromColumn": "report_dt",
+  "toTable": "dim_calendar",
+  "toColumn": "dt"
+}

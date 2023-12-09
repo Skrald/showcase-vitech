@@ -1,0 +1,23 @@
+{
+  "name": "dt",
+  "dataType": "dateTime",
+  "isKey": true,
+  "sourceColumn": "dt",
+  "formatString": "dd.mm.yy",
+  "lineageTag": "94aa930c-0e72-4962-9d65-6676e0e1a430",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDateTimeCustom\":true}"
+    }
+  ]
+}

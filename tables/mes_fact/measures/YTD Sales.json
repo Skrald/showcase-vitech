@@ -1,0 +1,9 @@
+{
+  "name": "YTD Sales",
+  "expression": [
+    "",
+    "TOTALYTD([Total Sales], dim_calendar[dt])"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "e86f2322-216c-423a-a57c-c7ca9fec00e5"
+}

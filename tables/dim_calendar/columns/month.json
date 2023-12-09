@@ -1,0 +1,14 @@
+{
+  "name": "month",
+  "dataType": "int64",
+  "sourceColumn": "month",
+  "formatString": "0",
+  "lineageTag": "40ff35cc-1526-4273-8e69-c178c4f209a1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

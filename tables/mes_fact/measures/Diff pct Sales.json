@@ -1,0 +1,13 @@
+{
+  "name": "Diff pct Sales",
+  "expression": [
+    "",
+    "VAR _diff =",
+    "    DIVIDE ( [Total Sales] - [PM Sales], [PM Sales] )",
+    "RETURN",
+    "    IF ( [Total Sales] && [PM Sales], _diff )",
+    ""
+  ],
+  "formatString": "0.0%;-0.0%;0.0%",
+  "lineageTag": "ddfd1f88-c0d9-473a-8ab8-39cd7b85215f"
+}

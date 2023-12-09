@@ -1,0 +1,6 @@
+{
+  "name": "PM Bonus",
+  "expression": "CALCULATE([Total Bonus], DATEADD(dim_calendar[dt], -1, MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "31d9bd24-2e0f-4494-977f-37e6bb2446d4"
+}

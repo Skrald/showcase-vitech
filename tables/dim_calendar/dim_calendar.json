@@ -1,0 +1,15 @@
+{
+  "name": "dim_calendar",
+  "lineageTag": "73f99b5f-2f02-4442-ac6b-4be0afa42366",
+  "dataCategory": "Time",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

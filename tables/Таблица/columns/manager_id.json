@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "manager_id",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "dim_manager[manager_id]",
+  "formatString": "0",
+  "lineageTag": "f39b7e05-b5e8-4cef-bbbc-cc9fdf8fe172",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

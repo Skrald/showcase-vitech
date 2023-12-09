@@ -1,0 +1,23 @@
+{
+  "name": "PM Manager onboarded rank diff pct Sales",
+  "expression": [
+    "",
+    "VAR _is_onboarded = [Total Manager working period] > 3",
+    "VAR _rank_scope =",
+    "    FILTER (",
+    "        ADDCOLUMNS (",
+    "            ALL ( dim_manager ),",
+    "            \"crit\", [Total Manager working period]",
+    "        ),",
+    "        [crit] > 3",
+    "    )",
+    "RETURN",
+    "    IF (",
+    "        [PM diff pct Sales] && _is_onboarded,",
+    "        RANKX ( _rank_scope, [PM diff pct Sales] )",
+    "    )",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "c7b91241-74f7-4ce4-9809-b2b1d6740712"
+}

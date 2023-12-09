@@ -1,0 +1,6 @@
+{
+  "name": "Total Sales",
+  "expression": "SUM(mes_fact[Sale])",
+  "formatString": "#,0",
+  "lineageTag": "a9ca39ab-67d2-457d-b643-55b6ea61844f"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "YTD Avg PM Manager onboarded rank diff pct Sales",
+  "expression": [
+    "",
+    "TOTALYTD ( [Avg PM Manager onboarded rank diff pct Sales], dim_calendar[dt] )"
+  ],
+  "formatString": "0.0",
+  "lineageTag": "88541bdf-b312-4404-a6bb-ded56df6d983"
+}

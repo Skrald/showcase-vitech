@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "@rating",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[@rating]",
+  "formatString": "0",
+  "lineageTag": "8b5e4400-a9f9-4cd6-b729-aff7d045f079",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

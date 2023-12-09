@@ -1,0 +1,6 @@
+{
+  "name": "PPM Sales",
+  "expression": "CALCULATE([Total Sales], DATEADD(dim_calendar[dt], -2, MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "ddad9ba0-3d0b-40d4-a506-ff5068802a3e"
+}

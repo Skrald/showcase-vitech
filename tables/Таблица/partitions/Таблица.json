@@ -1,0 +1,17 @@
+{
+  "name": "Таблица",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "",
+      "SUMMARIZECOLUMNS (",
+      "    dim_calendar[month_code],",
+      "    dim_manager[manager_id],",
+      "    dim_manager[name],",
+      "    \"@rating\", [PM Manager onboarded rank diff pct Sales]",
+      ")",
+      ""
+    ]
+  }
+}

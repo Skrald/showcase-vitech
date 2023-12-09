@@ -1,0 +1,9 @@
+{
+  "name": "YTD Bonus",
+  "expression": [
+    "",
+    "TOTALYTD([Total Bonus], dim_calendar[dt])"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "d5fe7cfd-f160-48b9-b137-94c4e6d55b09"
+}

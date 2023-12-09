@@ -1,0 +1,14 @@
+{
+  "name": "dim_manager",
+  "lineageTag": "1055bf7f-8595-43e1-bc5d-d8b6f345f969",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

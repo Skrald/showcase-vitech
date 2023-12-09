@@ -1,0 +1,14 @@
+{
+  "name": "dt_code",
+  "dataType": "int64",
+  "sourceColumn": "dt_code",
+  "formatString": "0",
+  "lineageTag": "6e89fb89-0d87-4911-9b61-d67ac9b72e5e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

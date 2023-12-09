@@ -1,0 +1,16 @@
+{
+  "type": "calculated",
+  "name": "yearmonth_nm",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "dim_calendar[month_nm] &\"'\"& FORMAT(dim_calendar[year], \"@\")",
+  "sortByColumn": "month_code",
+  "lineageTag": "cb1e0ada-4731-4278-842a-addc58288a7d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

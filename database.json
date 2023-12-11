@@ -9,6 +9,19 @@
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
     "sourceQueryCulture": "ru-RU",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US",
+            "DynamicImprovement": "HighConfidence"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
     "annotations": [
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -24,7 +37,7 @@
       },
       {
         "name": "TabularEditor_SerializeOptions",
-        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":false,\"Levels\":[\"Data Sources\",\"Perspectives\",\"Relationships\",\"Roles\",\"Tables\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Tables/Calculation Items\",\"Translations\"]}"
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":false,\"PrefixFilenames\":false,\"LocalTranslations\":false,\"LocalPerspectives\":false,\"LocalRelationships\":true,\"Levels\":[\"Data Sources\",\"Tables\",\"Tables/Calculation Items\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\"],\"AlsoSaveAsBim\":true}"
       }
     ]
   }

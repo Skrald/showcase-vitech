@@ -1,13 +1,6 @@
 {
   "name": "Total Manager working period",
-  "expression": [
-    "",
-    "DATEDIFF (",
-    "    EOMONTH ( MAX ( dim_manager[start_work] ), 0 ),",
-    "    MAX ( dim_calendar[dt] ),",
-    "    MONTH",
-    ")"
-  ],
+  "expression": "\nDATEDIFF (\n    EOMONTH ( MAX ( dim_manager[start_work] ), 0 ),\n    MAX ( dim_calendar[dt] ),\n    MONTH\n)",
   "formatString": "0",
   "lineageTag": "554108f6-6e60-4bbd-ac6a-da5925b7d1e4"
 }

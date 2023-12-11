@@ -1,0 +1,21 @@
+{
+  "type": "calculated",
+  "name": "yearmonth_label",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "\nvar _fact_latest = max(mes_fact[month_code]) \nvar _fact_previous = CALCULATE(max(mes_fact[month_code]), ALL(dim_calendar), mes_fact[month_code] < _fact_latest) \nreturn SWITCH(dim_calendar[month_code], _fact_latest, \"Current month\", _fact_previous, \"Previous month\", [yearmonth_nm])",
+  "sortByColumn": "month_code",
+  "lineageTag": "069ffe29-46bf-4419-aadc-d9258f83fcc8",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "SortByColumn"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

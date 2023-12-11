@@ -6,6 +6,11 @@
   "formatString": "0",
   "lineageTag": "7d7c57e3-bea0-447f-852f-097b6877d6d9",
   "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
   "annotations": [
     {
       "name": "SummarizationSetBy",

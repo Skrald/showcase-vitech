@@ -1,5 +1,5 @@
 {
-  "name": "PM Manager rank diff pct Sales",
+  "name": "PM rank diff pct Sales by Manager",
   "expression": "RANKX(ALL(dim_manager), [PM diff pct Sales])",
   "formatString": "0",
   "lineageTag": "c9e0dce0-3937-44f6-be08-fa2f47e69f94"

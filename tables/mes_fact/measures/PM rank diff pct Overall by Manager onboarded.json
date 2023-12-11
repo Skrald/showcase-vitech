@@ -1,0 +1,6 @@
+{
+  "name": "PM rank diff pct Overall by Manager onboarded",
+  "expression": "\n[PM rank diff pct Sales by Manager onboarded] * 0.75 + [PM rank diff pct Bonus by Manager onboarded] * 0.25",
+  "formatString": "0.0",
+  "lineageTag": "dafe2545-79f1-4306-b010-2415b7f0a407"
+}

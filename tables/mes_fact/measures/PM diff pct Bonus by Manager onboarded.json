@@ -1,0 +1,6 @@
+{
+  "name": "PM diff pct Bonus by Manager onboarded",
+  "expression": "\nVAR _is_onboarded = [Total Manager working period] > 3\nRETURN\n    IF (_is_onboarded, [PM diff pct Bonus] )",
+  "formatString": "0.0%;-0.0%;0.0%",
+  "lineageTag": "28b3d3e7-278c-4cc4-94b7-18b5bd80e1a4"
+}

@@ -6,6 +6,11 @@
   "formatString": "dd.mm.yy",
   "lineageTag": "9a17457e-9477-4b71-b33e-dd259bf446e8",
   "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
   "annotations": [
     {
       "name": "SummarizationSetBy",

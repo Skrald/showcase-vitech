@@ -1,6 +1,16 @@
 {
   "name": "dim_manager",
   "lineageTag": "1055bf7f-8595-43e1-bc5d-d8b6f345f969",
+  "partitions": [
+    {
+      "name": "dim_manager",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": "let\n    src = Table.FromRows(\n        Json.Document(\n            Binary.Decompress(\n                Binary.FromText(\n                    \"bZBJDsIwDEXvknUVxSmdzlL1LggkVmxghRiEuAFUVK0YyhWcG2E7oQUJyd7kv/h/uywVqEjhCR/YuSk+sceaHgxoY7U1NlZVVCrLzAZrPP8QQAQkQsRMbN0cWyIatxgpkDlWqIn36vFGff+alI9eCTNH0l5Bh0SbbNRT1nfY4IX6Si0zCk01+GSShv63o4sNG4EQORMH1rCTNH+Ygpk99nQXnhTS0EaydyEMGB+3cTPBBDGaipDcI3LhtWw8OIW8kHnEfg4jcd3SrQaMTwOpqqo3\",\n                    BinaryEncoding.Base64\n                ),\n                Compression.Deflate\n            )\n        ),\n        let\n            _t = ((type nullable text) meta [Serialized.Text = true])\n        in\n            type table [manager_id = _t, name = _t, start_work = _t]\n    ),\n    typed = Table.TransformColumnTypes(\n        src,\n        {\n            {\"manager_id\", Int64.Type}, \n            {\"name\", type text}, \n            {\"start_work\", type date}\n        }\n    )\nin\n    typed"
+      }
+    }
+  ],
   "annotations": [
     {
       "name": "PBI_NavigationStepName",
@@ -9,6 +19,10 @@
     {
       "name": "PBI_ResultType",
       "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
     }
   ]
 }

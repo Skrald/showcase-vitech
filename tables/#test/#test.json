@@ -1,0 +1,24 @@
+{
+  "name": "#test",
+  "lineageTag": "16a6bcec-17fc-4423-9c45-ca5959cdd576",
+  "partitions": [
+    {
+      "name": "#test",
+      "mode": "import",
+      "source": {
+        "type": "calculated",
+        "expression": "\nSUMMARIZECOLUMNS (\n    dim_calendar[month_code],\n    dim_manager[manager_id],\n    dim_manager[name],\n    \"@rating\", [PM rank diff pct Sales by Manager onboarded]\n)\n"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "0459d50ebde941658c04476009ef2884"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

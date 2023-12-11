@@ -5,6 +5,11 @@
   "sortByColumn": "month",
   "lineageTag": "cec1b15e-2812-4b1f-8b2b-091a0e5af96b",
   "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "SortByColumn"
+    }
+  ],
   "annotations": [
     {
       "name": "SummarizationSetBy",

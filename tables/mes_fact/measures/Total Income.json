@@ -1,0 +1,12 @@
+{
+  "name": "Total Income",
+  "expression": "[Total Sales] + [Total Bonus]",
+  "formatString": "#,0",
+  "lineageTag": "5efd4474-72f9-4245-b445-5ca0e91f08b7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Avg PM rank diff pct Sales by Manager onboarded",
+  "expression": "\nAVERAGEX (\n    VALUES ( dim_calendar[month_code] ),\n    [PM rank diff pct Sales by Manager onboarded]\n)\n",
+  "formatString": "0.0",
+  "lineageTag": "59f3d52a-9447-428a-95be-bba9d8af4036"
+}

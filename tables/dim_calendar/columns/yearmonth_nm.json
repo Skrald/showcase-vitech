@@ -7,6 +7,11 @@
   "sortByColumn": "month_code",
   "lineageTag": "cb1e0ada-4731-4278-842a-addc58288a7d",
   "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "SortByColumn"
+    }
+  ],
   "annotations": [
     {
       "name": "SummarizationSetBy",

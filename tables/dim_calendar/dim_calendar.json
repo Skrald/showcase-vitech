@@ -2,6 +2,16 @@
   "name": "dim_calendar",
   "lineageTag": "73f99b5f-2f02-4442-ac6b-4be0afa42366",
   "dataCategory": "Time",
+  "partitions": [
+    {
+      "name": "dim_calendar",
+      "mode": "import",
+      "source": {
+        "type": "m",
+        "expression": "let\n    params = [\n        CurrentDate = DateTime.FixedLocalNow(),\n        StartDate = Date.AddYears(Date.StartOfYear(CurrentDate), - 1),\n        EndDate = Date.AddYears(Date.EndOfYear(CurrentDate), 1),\n        DayCount = Duration.Days(Duration.From(EndDate - StartDate)) + 1,\n        Culture = \"en-GB\"\n    ],\n    dates = List.Dates(Date.From(params[StartDate]), params[DayCount], #duration(1, 0, 0, 0)),\n    transformed = List.Transform(\n        dates,\n        (dt) => {\n            dt,\n            Date.Year(dt),\n            Date.QuarterOfYear(dt),\n            Date.Year(dt) * 10 + Date.QuarterOfYear(dt),\n            Date.Month(dt),\n            Date.Year(dt) * 100 + Date.Month(dt),\n            Text.Start(Date.MonthName(dt, params[Culture]), 3), \n            Date.Day(dt), \n            Date.Year(dt) * 10000 + Date.Month(dt) * 100 + Date.Day(dt) \n        }\n    ),\n    structure = {\n        {\"dt\", Date.Type},\n        {\"year\", Int64.Type},\n        {\"quarter\", Int64.Type},\n        {\"quarter_code\", Int64.Type},\n        {\"month\", Int64.Type},\n        {\"month_code\", Int64.Type},\n        {\"month_nm\", Text.Type}, \n        {\"day\", Int64.Type},\n        {\"dt_code\", Int64.Type}\n    },\n    out = Table.TransformColumnTypes(\n        Table.FromRows(transformed, List.Transform(structure, each _{0})),\n        structure\n    )\nin\n    out"
+      }
+    }
+  ],
   "annotations": [
     {
       "name": "PBI_NavigationStepName",
@@ -10,6 +20,10 @@
     {
       "name": "PBI_ResultType",
       "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
     }
   ]
 }

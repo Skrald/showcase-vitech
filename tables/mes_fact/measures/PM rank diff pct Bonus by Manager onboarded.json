@@ -1,0 +1,6 @@
+{
+  "name": "PM rank diff pct Bonus by Manager onboarded",
+  "expression": "\nVAR _is_onboarded = [Total Manager working period] > 3\nVAR _rank_scope =\n    FILTER (\n        ADDCOLUMNS (\n            ALL ( dim_manager ),\n            \"crit\", [Total Manager working period]\n        ),\n        [crit] > 3\n    )\nRETURN\n    IF (\n        [PM diff pct Bonus] && _is_onboarded,\n        RANKX ( _rank_scope, [PM diff pct Bonus] )\n    )\n",
+  "formatString": "0",
+  "lineageTag": "788febb7-27ca-4c14-951e-eb73cfb84172"
+}
